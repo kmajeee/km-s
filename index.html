@@ -58,8 +58,8 @@ nav.scrolled{box-shadow:0 2px 0 var(--ink)}
 #hero{min-height:100vh;display:grid;grid-template-rows:auto 1fr auto;padding-top:56px;border-bottom:var(--rule)}
 .hero-top{display:grid;grid-template-columns:1fr 1fr;border-bottom:var(--rule)}
 .hero-top-l{padding:3rem 4rem 3rem 4rem;border-right:var(--rule)}
-.hero-name{font-family:var(--fd);font-size:clamp(5rem,11vw,10rem);line-height:.9;letter-spacing:-.01em;color:var(--ink);margin-bottom:1.5rem}
-.hero-name .line2{display:block;color:var(--red);font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:clamp(3rem,8vw,7.5rem);letter-spacing:-.02em;padding-left:.2rem;line-height:1.05}
+.hero-name{font-family:'Bebas Neue',monospace;font-size:clamp(5rem,11vw,10rem);line-height:.9;letter-spacing:-.01em;color:var(--ink);margin-bottom:1.5rem}
+.hero-name .line2{display:block;color:var(--red);font-family:'Bebas Neue',sans-serif;font-weight:700;font-size:clamp(3rem,8vw,7.5rem);letter-spacing:-.001em;padding-left:.2rem;line-height:1.05}
 .hero-top-r{padding:3rem;display:flex;flex-direction:column;justify-content:space-between}
 .hero-role-block{margin-bottom:2rem}
 .role-label{font-family:var(--fm);font-size:.6rem;letter-spacing:.2em;color:var(--ink3);text-transform:uppercase;margin-bottom:.5rem}
@@ -135,7 +135,15 @@ section{position:relative}
 .sk-cat{font-family:var(--fb);font-weight:800;font-size:1rem;margin-bottom:1rem;color:var(--ink);transition:color .25s;text-transform:uppercase;letter-spacing:.05em}
 .sk-tags{display:flex;flex-wrap:wrap;gap:.3rem}
 .sk-tag{padding:.18rem .55rem;border:1px solid var(--paper3);font-size:.65rem;font-family:var(--fm);color:var(--ink3);transition:all .25s;letter-spacing:.03em}
- 
+ .ptag{
+  padding:.18rem .55rem;
+  border:1px solid var(--paper3);
+  font-size:.65rem;
+  font-family:var(--fm);
+  color:var(--ink3);
+  transition:all .25s;
+  letter-spacing:.03em;
+}
 /* ── PROJECTS ── */
 #projects{border-bottom:var(--rule)}
 .proj-grid{display:grid;grid-template-columns:1fr 1fr}
