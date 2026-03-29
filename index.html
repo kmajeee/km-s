@@ -490,6 +490,9 @@
       .hero-big-letter { font-size:clamp(6rem,30vw,12rem) }
 
       .hero-bottom { padding:.7rem 1rem; gap:.7rem; font-size:.52rem }
+      html, body { overflow-x:hidden; width:100vw; }
+      section, #hero, .skills-grid, .proj-grid, .about-body, .exp-grid, .awards-row, .contact-inner, footer { width:100%; max-width:100vw; }
+      .hero-big-letter { right:-.4rem; }
 
       /* Section headers */
       .sec-header { padding:1.2rem 1rem 1rem; gap:.8rem }
@@ -569,6 +572,8 @@
        SMALL PHONE — up to 380px
     ═══════════════════════════════════════════ */
     @media(max-width:380px) {
+      html, body { overflow-x:hidden; width:100vw; }
+      section, #hero, .skills-grid, .proj-grid, .about-body, .exp-grid, .awards-row, .contact-inner, footer { width:100%; max-width:100vw; }
       .hero-name { font-size:clamp(2.8rem,18vw,4rem) }
       .hero-name .line2 { font-size:clamp(1.7rem,12vw,2.8rem) }
       .hero-stats { grid-template-columns:1fr 1fr }
