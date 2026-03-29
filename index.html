@@ -474,12 +474,11 @@
       .hero-desc { font-size:.82rem }
 
       /* Stats: 2x2 */
-      .hero-stats { grid-template-columns:1fr 1fr; position:relative; }
-      .hero-stats::before { content:''; position:absolute; top:50%; left:25%; width:50%; height:1px; background:var(--ink); transform:translateY(-50%); }
-      .hero-stats::after { content:''; position:absolute; top:25%; left:50%; width:1px; height:50%; background:var(--ink); transform:translateX(-50%); }
-      .stat { padding:.9rem .5rem; border:none; }
-      .stat-n { font-size:1.9rem; white-space:nowrap; }
-      .stat-l { font-size:.48rem }
+      .hero-stats { grid-template-columns:1fr 1fr; gap:.45rem; }
+      .stat { padding:.9rem .75rem; border:1px solid rgba(10,8,4,.15); border-radius:10px; background:rgba(245,240,232,.85); box-shadow:0 3px 8px rgba(10,8,4,.06); transition:transform .25s ease, border-color .25s ease, background .25s ease; }
+      .stat:hover, .stat:focus-within { transform: translateY(-2px); border-color:var(--red); background:rgba(240,230,216,.95); }
+      .stat-n { font-size:1.9rem; white-space:nowrap; color:var(--ink); }
+      .stat-l { font-size:.48rem; letter-spacing:.13em; color:var(--ink3); }
 
       .hero-main-l { padding:1.5rem 1rem }
       .big-intro { font-size:1rem; margin-bottom:1.5rem }
