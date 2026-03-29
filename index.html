@@ -85,7 +85,7 @@
     .hero-top { display:grid; grid-template-columns:1fr 1fr; border-bottom:var(--rule); }
     .hero-top-l { padding:3rem 4rem; border-right:var(--rule); }
     .hero-name { font-family:var(--fd); font-size:clamp(4rem,10vw,10rem); line-height:.9; letter-spacing:-.01em; color:var(--ink); margin-bottom:1.5rem; }
-    .hero-name .line2 { display:block; color:var(--red); font-family:var(--fs); font-style:italic; font-size:clamp(2.5rem,7vw,7.5rem); letter-spacing:-.02em; padding-left:.2rem; line-height:1.05; }
+    .hero-name .line2 { display:block; color:var(--red); font-family:var(--fd); font-size:clamp(4rem,10vw,10rem); letter-spacing:-.02em; padding-left:.2rem; line-height:1.05; }
     .hero-top-r { padding:3rem; display:flex; flex-direction:column; justify-content:space-between; }
 
     /* ── FIXED CURRENT FOCUS ANIMATION ── */
@@ -124,10 +124,10 @@
     .fc-detail { font-size:.8rem; color:var(--ink3); line-height:1.6; }
     .fc-badge { display:inline-flex; align-items:center; gap:.4rem; margin-top:1rem; padding:.3rem .8rem; background:var(--red); color:var(--paper); font-family:var(--fm); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; animation:badgePulse 2.5s ease-in-out infinite; }
     @keyframes badgePulse { 0%,100%{box-shadow:0 0 0 0 rgba(192,57,43,.4)} 50%{box-shadow:0 0 0 8px rgba(192,57,43,0)} }
-    .hero-bottom { border-top:var(--rule); display:flex; align-items:center; gap:1.5rem; padding:1rem 4rem; font-family:var(--fm); font-size:.85rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink3); flex-wrap:wrap; }
-    .hb-item { display:flex; align-items:center; gap:.6rem; transition:color .2s; font-size:1.05rem; font-weight:600; }
+    .hero-bottom { border-top:var(--rule); display:flex; align-items:center; gap:1.5rem; padding:1rem 4rem; font-family:var(--fm); font-size:.62rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink3); flex-wrap:wrap; }
+    .hb-item { display:flex; align-items:center; gap:.4rem; transition:color .2s; }
     .hb-item:hover { color:var(--ink); }
-    .hb-dot { width:8px; height:8px; border-radius:50%; background:var(--red); flex-shrink:0; animation:dotP 2s ease-in-out infinite; }
+    .hb-dot { width:5px; height:5px; border-radius:50%; background:var(--red); flex-shrink:0; animation:dotP 2s ease-in-out infinite; }
     .hb-item:nth-child(2) .hb-dot{animation-delay:.4s} .hb-item:nth-child(3) .hb-dot{animation-delay:.8s} .hb-item:nth-child(4) .hb-dot{animation-delay:1.2s} .hb-item:nth-child(5) .hb-dot{animation-delay:1.6s}
     @keyframes dotP { 0%,100%{transform:scale(1)} 50%{transform:scale(2);opacity:.4} }
     .scroll-hint { margin-left:auto; display:flex; align-items:center; gap:.5rem; animation:nudgeX 2s ease-in-out infinite; }
@@ -455,15 +455,10 @@
       .nav-brand { padding:.7rem 1rem }
       .brand-sq { width:24px; height:24px }
 
-      html, body { overflow-x:hidden; width:100%; min-width:100vw }
-      body { overflow-x:hidden }
-
       /* Hero */
-      .hero-top, .hero-main, .hero-bottom { text-align:center; width:100%; max-width:100vw; box-sizing:border-box }
-      .hero-top-l, .hero-top-r, .hero-main-l, .hero-main-r { padding-left:1rem; padding-right:1rem }
       .hero-top-l { padding:1.8rem 1rem 1.5rem }
-      .hero-name { font-size:clamp(3.2rem,18vw,5.5rem); margin-bottom:.8rem; text-align:center; padding-left:0; margin-left:auto; margin-right:auto }
-      .hero-name .line2 { font-size:clamp(2rem,13vw,3.8rem); padding-left:0 }
+      .hero-name { font-size:clamp(3.2rem,18vw,5.5rem); margin-bottom:.8rem }
+      .hero-name .line2 { font-size:clamp(2rem,13vw,3.8rem) }
 
       .hero-top-r { padding:1.2rem 1rem }
       .role-label { font-size:.55rem }
@@ -471,11 +466,8 @@
       .hero-desc { font-size:.82rem }
 
       /* Stats: 2x2 */
-      .hero-stats { grid-template-columns:1fr 1fr; gap:.35rem }
-      .stat { padding:.9rem .5rem; border-right:none; border-bottom:var(--rule-thin); }
-      .stat:nth-child(odd) { border-right:var(--rule-thin) }
-      .stat:nth-last-child(-n+2) { border-bottom:none }
-      .stat { min-height:84px }
+      .hero-stats { grid-template-columns:1fr 1fr }
+      .stat { padding:.9rem .5rem }
       .stat-n { font-size:1.9rem }
       .stat-l { font-size:.48rem }
 
@@ -674,6 +666,7 @@
     <div class="hb-item"><div class="hb-dot"></div>Firebase &amp; Cloud</div>
     <div class="hb-item"><div class="hb-dot"></div>NLP &amp; AI</div>
     
+  </div>
 </section>
 
 <!-- MARQUEE -->
