@@ -456,9 +456,11 @@
       .brand-sq { width:24px; height:24px }
 
       /* Hero */
+      .hero-top, .hero-main, .hero-bottom { text-align:center }
+      .hero-top-l, .hero-top-r, .hero-main-l, .hero-main-r { padding-left:1rem; padding-right:1rem }
       .hero-top-l { padding:1.8rem 1rem 1.5rem }
-      .hero-name { font-size:clamp(3.2rem,18vw,5.5rem); margin-bottom:.8rem }
-      .hero-name .line2 { font-size:clamp(2rem,13vw,3.8rem) }
+      .hero-name { font-size:clamp(3.2rem,18vw,5.5rem); margin-bottom:.8rem; text-align:center; padding-left:0; margin-left:auto; margin-right:auto }
+      .hero-name .line2 { font-size:clamp(2rem,13vw,3.8rem); padding-left:0 }
 
       .hero-top-r { padding:1.2rem 1rem }
       .role-label { font-size:.55rem }
@@ -466,8 +468,11 @@
       .hero-desc { font-size:.82rem }
 
       /* Stats: 2x2 */
-      .hero-stats { grid-template-columns:1fr 1fr }
-      .stat { padding:.9rem .5rem }
+      .hero-stats { grid-template-columns:1fr 1fr; gap:.35rem }
+      .stat { padding:.9rem .5rem; border-right:none; border-bottom:var(--rule-thin); }
+      .stat:nth-child(odd) { border-right:var(--rule-thin) }
+      .stat:nth-last-child(-n+2) { border-bottom:none }
+      .stat { min-height:84px }
       .stat-n { font-size:1.9rem }
       .stat-l { font-size:.48rem }
 
