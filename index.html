@@ -124,10 +124,10 @@
     .fc-detail { font-size:.8rem; color:var(--ink3); line-height:1.6; }
     .fc-badge { display:inline-flex; align-items:center; gap:.4rem; margin-top:1rem; padding:.3rem .8rem; background:var(--red); color:var(--paper); font-family:var(--fm); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; animation:badgePulse 2.5s ease-in-out infinite; }
     @keyframes badgePulse { 0%,100%{box-shadow:0 0 0 0 rgba(192,57,43,.4)} 50%{box-shadow:0 0 0 8px rgba(192,57,43,0)} }
-    .hero-bottom { border-top:var(--rule); display:flex; align-items:center; gap:1.5rem; padding:1rem 4rem; font-family:var(--fm); font-size:.62rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink3); flex-wrap:wrap; }
-    .hb-item { display:flex; align-items:center; gap:.4rem; transition:color .2s; }
+    .hero-bottom { border-top:var(--rule); display:flex; align-items:center; gap:1.5rem; padding:1rem 4rem; font-family:var(--fm); font-size:.85rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink3); flex-wrap:wrap; }
+    .hb-item { display:flex; align-items:center; gap:.6rem; transition:color .2s; font-size:1.05rem; font-weight:600; }
     .hb-item:hover { color:var(--ink); }
-    .hb-dot { width:5px; height:5px; border-radius:50%; background:var(--red); flex-shrink:0; animation:dotP 2s ease-in-out infinite; }
+    .hb-dot { width:8px; height:8px; border-radius:50%; background:var(--red); flex-shrink:0; animation:dotP 2s ease-in-out infinite; }
     .hb-item:nth-child(2) .hb-dot{animation-delay:.4s} .hb-item:nth-child(3) .hb-dot{animation-delay:.8s} .hb-item:nth-child(4) .hb-dot{animation-delay:1.2s} .hb-item:nth-child(5) .hb-dot{animation-delay:1.6s}
     @keyframes dotP { 0%,100%{transform:scale(1)} 50%{transform:scale(2);opacity:.4} }
     .scroll-hint { margin-left:auto; display:flex; align-items:center; gap:.5rem; animation:nudgeX 2s ease-in-out infinite; }
@@ -673,8 +673,7 @@
     <div class="hb-item"><div class="hb-dot"></div>IoT &amp; Hardware</div>
     <div class="hb-item"><div class="hb-dot"></div>Firebase &amp; Cloud</div>
     <div class="hb-item"><div class="hb-dot"></div>NLP &amp; AI</div>
-    <div class="scroll-hint"><span style="font-family:var(--fm);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)">Scroll</span><span style="color:var(--red)">→</span></div>
-  </div>
+    
 </section>
 
 <!-- MARQUEE -->
