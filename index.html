@@ -2249,6 +2249,119 @@
         font-size: .82rem
       }
     }
+    /* ================= MOBILE RESPONSIVE FIX ================= */
+
+@media (max-width: 900px){
+
+  body{
+    cursor:auto;
+  }
+
+  #cur{
+    display:none;
+  }
+
+  /* NAV */
+
+  .nav-links{
+    display:none;
+  }
+
+  .nav-toggle{
+    display:flex;
+    margin-left:auto;
+  }
+
+  .nav-right{
+    display:none;
+  }
+
+  /* HERO */
+
+  .hero-top{
+    grid-template-columns:1fr;
+  }
+
+  .hero-top-l{
+    padding:2rem;
+    border-right:none;
+    border-bottom:var(--rule);
+    text-align:center;
+  }
+
+  .hero-top-r{
+    padding:2rem;
+    text-align:center;
+    align-items:center;
+  }
+
+  .hero-name{
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .hero-name .line2{
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .hero-desc{
+    max-width:100%;
+  }
+
+  /* ABOUT */
+
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-col{
+    padding:2rem;
+  }
+
+  /* PROJECTS */
+
+  .projects-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* SKILLS */
+
+  .skills-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  /* CONTACT */
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* GENERAL */
+
+  section{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+  }
+
+}
+
+
+/* EXTRA SMALL DEVICES */
+
+@media (max-width:500px){
+
+  .hero-name{
+    font-size:2.8rem;
+  }
+
+  .hero-name .line2{
+    font-size:2rem;
+  }
+
+  .skills-grid{
+    grid-template-columns:1fr;
+  }
+
+}
   </style>
 </head>
 
