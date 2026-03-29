@@ -377,9 +377,12 @@
       .brand-txt { display:none }
 
       /* Hero top: stack on tablet */
-      .hero-top { grid-template-columns:1fr }
-      .hero-top-l { border-right:none; border-bottom:var(--rule); padding:2.5rem 2rem 2rem }
-      .hero-top-r { padding:2rem }
+      .hero-top { grid-template-columns:1fr; justify-items:center; }
+      .hero-top-l { border-right:none; border-bottom:var(--rule); padding:2.5rem 2rem 2rem; text-align:center; }
+      .hero-top-r { padding:2rem; text-align:center; }
+      .hero-main { justify-items:center; }
+      .hero-main-l, .hero-main-r { text-align:center; }
+      .hero-bottom { justify-content:center; }
       /* Fix: role text animation still works because it's CSS-only */
       .role-text { font-size:1.15rem }
       .hero-desc { max-width:100% }
@@ -459,6 +462,11 @@
       .hero-top-l { padding:1.8rem 1rem 1.5rem }
       .hero-name { font-size:clamp(3.2rem,18vw,5.5rem); margin-bottom:.8rem }
       .hero-name .line2 { font-size:clamp(2rem,13vw,3.8rem) }
+
+      .hero-top-l, .hero-top-r { text-align:center; }
+      .hero-main-l, .hero-main-r { text-align:center; }
+      .hero-bottom { justify-content:center; }
+      .skills-grid { width:100%; max-width:100%; }
 
       .hero-top-r { padding:1.2rem 1rem }
       .role-label { font-size:.55rem }
