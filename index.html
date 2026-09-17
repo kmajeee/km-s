@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheik Abdul Majeeth K M | Robotics Engineer & Mobile App Developer</title>
+  <meta name="description" content="Portfolio of Sheik Abdul Majeeth K M — Robotics Engineer, Mobile App Developer, and Published AI Researcher specializing in Flutter, ROS, NVIDIA Isaac Sim, and Embedded Systems.">
+  <meta name="keywords" content="Sheik Abdul Majeeth, Robotics Engineer, Mobile App Developer, Flutter, ROS, ROS 2, NVIDIA Isaac Sim, Embedded Systems, IoT, AI">
+  <meta name="author" content="Sheik Abdul Majeeth K M">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sheik Abdul Majeeth K M | Robotics Engineer & Mobile App Developer">
+  <meta property="og:description" content="Published AI Researcher & Developer specializing in Flutter, Robotics, ROS, and Embedded IoT.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- Ambient background glow effect -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Sticky Glass Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo-link">
+        <div class="logo-text">
+          <span class="name">Sheik Abdul Majeeth K M</span>
+          <span class="role">Robotics Engineer &bull; Mobile App Developer</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#research" class="nav-link">Research & Awards</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Switch Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="assets/docs/Sheik_Abdul_Majeeth_Resume.pdf" target="_blank" class="btn btn-outline nav-resume-btn" download>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION: Styled to match the exact uploaded reference visual -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        
+        <!-- Status Pill -->
+        <div class="hero-status-pill">
+          <span class="pulse-dot"></span>
+          <span>Available for Robotics & Mobile Development Roles & Research</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Sheik Abdul Majeeth</span>
+        </h1>
+
+        <div class="hero-tagline-wrap">
+          <span class="hero-role-prefix">I build</span>
+          <span class="typing-text" id="typingText">Robotics & Autonomous Systems</span>
+          <span class="cursor-blink">|</span>
+        </div>
+
+        <p class="hero-subtext">
+          Robotics Engineer &amp; Mobile App Developer with published research in AI-driven retail technology. 
+          Bridging the gap between intelligent hardware (ROS, Jetson, ESP32, Load Cells) and seamless mobile experiences (Flutter, Firebase).
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#research" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <span>Research & Awards</span>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <!-- HERO STAGE: Developer Portrait Showcase with High-Tech Ambient & Scanner Effects -->
+        <div class="hero-stage-card" id="heroStage">
+          <div class="hero-glow-backdrop" aria-hidden="true"></div>
+          <div class="hero-stage-inner">
+            <div class="hero-image-wrapper">
+              <img src="assets/images/hero-portrait.png" alt="Sheik Abdul Majeeth K M - Robotics Engineer & Mobile App Developer" class="hero-portrait-img" id="heroPortrait">
+              <div class="hero-scan-beam" aria-hidden="true"></div>
+              <div class="hero-corner-reticle top-left" aria-hidden="true"></div>
+              <div class="hero-corner-reticle top-right" aria-hidden="true"></div>
+              <div class="hero-corner-reticle bottom-left" aria-hidden="true"></div>
+              <div class="hero-corner-reticle bottom-right" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KEY METRICS / QUICK HIGHLIGHTS BAR -->
+    <section class="metrics-section">
+      <div class="container metrics-grid">
+        <div class="metric-card reveal-item">
+          <div class="metric-value"><span class="count-up" data-target="8.05" data-decimals="2">8.05</span><span class="metric-sub">/10</span></div>
+          <div class="metric-label">CGPA in B.Tech AI & Data Science</div>
+          <div class="metric-desc">Francis Xavier Engineering College</div>
+        </div>
+
+        <div class="metric-card highlight-award reveal-item">
+          <div class="metric-icon-award">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+          </div>
+          <div class="metric-value"><span class="count-up" data-target="2">2</span>x Awards</div>
+          <div class="metric-label">Maldives SMART 25 Conference</div>
+          <div class="metric-desc">Best Paper &amp; Best Oral Presenter</div>
+        </div>
+
+        <div class="metric-card reveal-item">
+          <div class="metric-value"><span class="count-up" data-target="3">3</span>+</div>
+          <div class="metric-label">Industry Internships</div>
+          <div class="metric-desc">Robotics, Applied AI &amp; Python ML</div>
+        </div>
+
+        <div class="metric-card reveal-item">
+          <div class="metric-value">1st Author</div>
+          <div class="metric-label">International Publication</div>
+          <div class="metric-desc">AI-Powered Smart Shopping Trolley</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Bridging Embedded Robotics &amp; Scalable Mobile Tech</h2>
+          <p class="section-desc">Engineering resilient cyber-physical systems that unite intelligence, hardware sensors, and intuitive mobile interfaces.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="about-icon-badge">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3>Professional Profile</h3>
+            <p>
+              I am a <strong>Flutter Mobile App Developer and Robotics Engineer</strong> with comprehensive hands-on experience developing cross-platform applications using Flutter, Dart, React.js, MongoDB, and Firebase.
+            </p>
+            <p>
+              My expertise spans <strong>REST API integration, state management, secure authentication, and responsive UI design</strong>. Uniquely, I specialize in combining mobile software with physical IoT devices — interfacing Arduinos, load cells (HX711), RFID, BLE, and Jetson Orin Nano boards to bring smart autonomous solutions into the physical world.
+            </p>
+            <div class="about-contacts">
+              <a href="mailto:kmmajeee@gmail.com" class="contact-pill">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                kmmajeee@gmail.com
+              </a>
+              <a href="tel:+916381586863" class="contact-pill">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                +91 6381586863
+              </a>
+              <span class="contact-pill">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Tamil Nadu, India
+              </span>
+            </div>
+          </div>
+
+          <div class="about-highlights-card glass-panel">
+            <h3>Engineering Philosophy</h3>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <div class="feature-body">
+                <h4>Cyber-Physical Interfacing</h4>
+                <p>Seamlessly synchronizing microcontrollers, sensors (weight, RFID, vision), and mobile applications via BLE, MQTT, and WebSockets.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="feature-body">
+                <h4>Applied AI &amp; Robotics</h4>
+                <p>Deploying computer vision, speech models, and ROS/ROS 2 automation pipelines onto edge devices like Jetson Orin Nano &amp; Raspberry Pi 5.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+              </div>
+              <div class="feature-body">
+                <h4>Fluid User Experiences</h4>
+                <p>Crafting silky 60/120fps cross-platform Flutter applications backed by Firebase &amp; MongoDB with zero architectural compromises.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS & HARDWARE LAB -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Hardware &amp; Software Matrix</h2>
+          <p class="section-desc">From bare-metal microcontrollers and ROS nodes to cross-platform mobile architectures.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="tabs-container">
+          <div class="tabs-list" role="tablist">
+            <button class="tab-btn active" data-tab="all" role="tab">All Domains</button>
+            <button class="tab-btn" data-tab="robotics" role="tab">Robotics, IoT &amp; Embedded</button>
+            <button class="tab-btn" data-tab="mobile" role="tab">Mobile &amp; Languages</button>
+            <button class="tab-btn" data-tab="ai" role="tab">AI &amp; Data</button>
+            <button class="tab-btn" data-tab="cloud" role="tab">Cloud, Backend &amp; 3D</button>
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+
+          <!-- Robotics & Embedded -->
+          <div class="skill-category-card glass-panel" data-category="robotics">
+            <div class="cat-header">
+              <div class="cat-icon icon-robot">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                  <circle cx="6" cy="6" r="2"/><circle cx="12" cy="6" r="2"/><circle cx="18" cy="6" r="2"/>
+                  <circle cx="6" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="18" cy="12" r="2"/>
+                  <circle cx="6" cy="18" r="2"/><circle cx="12" cy="18" r="2"/><circle cx="18" cy="18" r="2"/>
+                </svg>
+              </div>
+              <h3>Robotics, IoT &amp; Hardware</h3>
+            </div>
+            <p class="cat-summary">Architecting sensor networks, edge vision compute, motor drives, and ROS pipelines.</p>
+            <div class="skill-chips-wrap">
+              <span class="chip chip-accent">ROS &amp; ROS 2</span>
+              <span class="chip chip-accent">NVIDIA Isaac Sim</span>
+              <span class="chip">NVIDIA Jetson Orin Nano</span>
+              <span class="chip">Raspberry Pi 5</span>
+              <span class="chip">Raspberry Pi Pico</span>
+              <span class="chip">ESP32-S3 (BLE/WiFi)</span>
+              <span class="chip">Arduino</span>
+              <span class="chip">RFID &amp; NFC</span>
+              <span class="chip">Load Cell + HX711</span>
+              <span class="chip">Sensor Integration &amp; Actuators</span>
+            </div>
+          </div>
+
+          <!-- Mobile App Development -->
+          <div class="skill-category-card glass-panel" data-category="mobile">
+            <div class="cat-header">
+              <div class="cat-icon icon-mobile">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3>Mobile App Development</h3>
+            </div>
+            <p class="cat-summary">Building production-ready, performant cross-platform mobile experiences.</p>
+            <div class="skill-chips-wrap">
+              <span class="chip chip-accent">Flutter</span>
+              <span class="chip chip-accent">Dart</span>
+              <span class="chip">Android Studio</span>
+              <span class="chip">REST API Integration</span>
+              <span class="chip">Speech Recognition API</span>
+              <span class="chip">Barcode &amp; QR Scanning</span>
+              <span class="chip">Hardware Interfacing</span>
+              <span class="chip">Google Play Store Deployment</span>
+              <span class="chip">State Management (Provider / Riverpod)</span>
+            </div>
+          </div>
+
+          <!-- Programming Languages -->
+          <div class="skill-category-card glass-panel" data-category="mobile">
+            <div class="cat-header">
+              <div class="cat-icon icon-code">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3>Programming Languages</h3>
+            </div>
+            <p class="cat-summary">Strong algorithmic thinking and polyglot software engineering.</p>
+            <div class="skill-chips-wrap">
+              <span class="chip chip-accent">Python</span>
+              <span class="chip chip-accent">Dart</span>
+              <span class="chip">C Language</span>
+              <span class="chip">React.js</span>
+              <span class="chip">JavaScript (ES6+)</span>
+              <span class="chip">HTML5 &amp; CSS3</span>
+              <span class="chip">SQL &amp; NoSQL</span>
+            </div>
+          </div>
+
+          <!-- AI & Data Science -->
+          <div class="skill-category-card glass-panel" data-category="ai">
+            <div class="cat-header">
+              <div class="cat-icon icon-brain">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line>
+                </svg>
+              </div>
+              <h3>AI, Computer Vision &amp; Data</h3>
+            </div>
+            <p class="cat-summary">Training and integrating machine learning pipelines into live software.</p>
+            <div class="skill-chips-wrap">
+              <span class="chip chip-accent">Machine Learning Integration</span>
+              <span class="chip chip-accent">Computer Vision Pipelines</span>
+              <span class="chip">NLP (Natural Language Processing)</span>
+              <span class="chip">LLM Workflows</span>
+              <span class="chip">Power BI Analytics</span>
+              <span class="chip">Data Processing Pipelines</span>
+              <span class="chip">ML Model Lifecycle &amp; Deployment</span>
+            </div>
+          </div>
+
+          <!-- Backend, Cloud & 3D -->
+          <div class="skill-category-card glass-panel" data-category="cloud">
+            <div class="cat-header">
+              <div class="cat-icon icon-cloud">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <h3>Backend, Cloud &amp; 3D Design</h3>
+            </div>
+            <p class="cat-summary">Reliable cloud data persistence, serverless auth, and spatial asset generation.</p>
+            <div class="skill-chips-wrap">
+              <span class="chip chip-accent">Firebase Firestore</span>
+              <span class="chip chip-accent">Firebase Auth</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">Google Cloud Platform</span>
+              <span class="chip">SQLite Local DB</span>
+              <span class="chip">Blender 3D</span>
+              <span class="chip">Git &amp; GitHub</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SHOWCASE -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Engineered Solutions</h2>
+          <p class="section-desc">Projects spanning intelligent retail hardware, real-time telemetry, and automated security verification.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: Smart Trolley -->
+          <article class="project-card glass-panel" data-project-id="smart-trolley">
+            <div class="project-badge-top">
+              <span class="flag-award">Award-Winning &amp; Published</span>
+            </div>
+            <div class="project-media">
+              <div class="project-visual visual-trolley">
+                <div class="visual-art">
+                  <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </div>
+                <div class="visual-overlay">
+                  <span class="view-btn">View Deep Dive &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="proj-category">Robotics &bull; IoT &bull; Flutter</span>
+              </div>
+              <h3 class="project-title">Smart Trolley — AI-Enabled Voice Billing &amp; Security</h3>
+              <p class="project-excerpt">
+                An autonomous retail cart fusing Flutter, NFC/RFID, weight load cells (HX711), voice recognition, and geofencing to eradicate supermarket checkout queues and eliminate retail theft.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="highlight-bullet">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Dual weight verification (HX711) + RFID anti-theft</span>
+                </div>
+                <div class="highlight-bullet">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Speech-assisted voice billing &amp; instant checkout</span>
+                </div>
+                <div class="highlight-bullet">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Child-safety geofencing &amp; live customer analytics</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">NFC / RFID</span>
+                <span class="tag">Load Cell HX711</span>
+                <span class="tag">IoT &amp; BLE</span>
+                <span class="tag">Speech AI</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-target="smart-trolley">
+                  <span>Architecture Details</span>
+                </button>
+                <a href="#research" class="btn btn-ghost btn-sm">
+                  <span>Research Paper &rarr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Rydr -->
+          <article class="project-card glass-panel" data-project-id="rydr">
+            <div class="project-badge-top">
+              <span class="flag-tech">Real-Time Telemetry</span>
+            </div>
+            <div class="project-media">
+              <div class="project-visual visual-rydr">
+                <div class="visual-art">
+                  <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="5.5" cy="17.5" r="3.5"></circle>
+                    <circle cx="18.5" cy="17.5" r="3.5"></circle>
+                    <path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5L9 9l4.5-2L16 11l2.5-1"></path>
+                  </svg>
+                </div>
+                <div class="visual-overlay">
+                  <span class="view-btn">View Deep Dive &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="proj-category">Mobile &bull; Navigation &bull; Cloud</span>
+              </div>
+              <h3 class="project-title">Rydr — Real-Time Group Cycling Navigation</h3>
+              <p class="project-excerpt">
+                A high-precision mobile navigation app for peloton cycling teams, enabling peer-to-peer real-time GPS telemetry, pace synchronization, hazard alerts, and offline map rendering.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="highlight-bullet">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Sub-second group location syncing &amp; proximity alerts</span>
+                </div>
+                <div class="highlight-bullet">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Waypoint sharing &amp; elevation gradient analytics</span>
+                </div>
+                <div class="highlight-bullet">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Offline routing fallback using local SQLite caching</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Google Cloud</span>
+                <span class="tag">Geolocation</span>
+                <span class="tag">WebSockets</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">REST API</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-target="rydr">
+                  <span>Architecture Details</span>
+                </button>
+                <a href="https://github.com/kmajeee" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+                  <span>GitHub &rarr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: FakeX -->
+          <article class="project-card glass-panel" data-project-id="fakex">
+            <div class="project-badge-top">
+              <span class="flag-ai">AI &amp; Vision Security</span>
+            </div>
+            <div class="project-media">
+              <div class="project-visual visual-fakex">
+                <div class="visual-art">
+                  <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <div class="visual-overlay">
+                  <span class="view-btn">View Deep Dive &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="proj-category">Mobile &bull; Web &bull; Computer Vision</span>
+              </div>
+              <h3 class="project-title">FakeX — Fake Certification Detection</h3>
+              <p class="project-excerpt">
+                A dual Mobile (Flutter) and Web (React) prototype utilizing Computer Vision and tamper-evident optical verification to validate academic credentials and certificate authenticity.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="highlight-bullet">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Instant optical watermark &amp; stamp feature detection</span>
+                </div>
+                <div class="highlight-bullet">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Unified mobile scanner + web verification portal</span>
+                </div>
+                <div class="highlight-bullet">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Secure cryptographic hash validation</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">React.js</span>
+                <span class="tag">Python</span>
+                <span class="tag">OpenCV / ML</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">REST API</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-target="fakex">
+                  <span>Architecture Details</span>
+                </button>
+                <a href="https://github.com/kmajeee" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+                  <span>GitHub &rarr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH & AWARDS SECTION -->
+    <section class="section research-section" id="research">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Scientific Contribution</span>
+          <h2 class="section-title">Publication &amp; International Recognition</h2>
+          <p class="section-desc">Pioneering applied AI &amp; IoT solutions recognized on the international conference stage.</p>
+        </div>
+
+        <div class="research-showcase glass-panel">
+          <div class="awards-ribbon-bar">
+            <div class="award-pill">
+              <span class="trophy-icon">&#127942;</span>
+              <strong>Best Paper Award</strong> &bull; Maldives SMART 25 International Conference
+            </div>
+            <div class="award-pill">
+              <span class="trophy-icon">&#127908;</span>
+              <strong>Best Oral Presenter</strong> &bull; Maldives SMART 25 International Conference
+            </div>
+          </div>
+
+          <div class="research-grid">
+            <div class="research-main">
+              <span class="research-type-badge">Peer-Reviewed Research Paper</span>
+              <h3 class="paper-title">AI-Powered Smart Shopping Trolley — Design and Implementation</h3>
+              <div class="paper-authors">
+                <strong>Sheik Abdul Majeeth K M</strong> &bull; <em>Francis Xavier Engineering College</em>
+              </div>
+
+              <p class="paper-abstract">
+                <strong>Abstract:</strong> This research paper details the end-to-end design, embedded hardware architecture, and software orchestration of an intelligent retail trolley built with Flutter, Firebase, NFC, IoT microcontrollers, and BLE communication. The system tackles major bottlenecks in retail shopping: long billing queues, customer friction, cart misplacement, and inventory shrinkage.
+              </p>
+
+              <div class="research-pillars">
+                <div class="pillar-box">
+                  <div class="pillar-title">Automated Billing</div>
+                  <div class="pillar-desc">NFC &amp; RFID barcode scanning paired with continuous weight telemetry to register purchases instantly.</div>
+                </div>
+                <div class="pillar-box">
+                  <div class="pillar-title">Anti-Theft Security</div>
+                  <div class="pillar-desc">HX711 load cell sensor verification detects un-scanned items or weight mismatches immediately.</div>
+                </div>
+                <div class="pillar-box">
+                  <div class="pillar-title">AI Product Engine</div>
+                  <div class="pillar-desc">Real-time cart-based recommendation system suggesting complimentary products based on customer habits.</div>
+                </div>
+                <div class="pillar-box">
+                  <div class="pillar-title">Child Safety Geofence</div>
+                  <div class="pillar-desc">BLE RSSI beacon triangulation preventing carts from traversing out of bounds with automated wheel locks.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="research-sidebar">
+              <div class="conference-card">
+                <h4>Conference Spotlight</h4>
+                <div class="conf-name">Maldives SMART 25</div>
+                <div class="conf-sub">International Conference on Smart Systems &amp; Modern Technologies</div>
+                
+                <div class="double-award-badge">
+                  <div class="award-item">
+                    <div class="award-medal">&#129351;</div>
+                    <div class="award-info">
+                      <span class="title">Best Paper Award</span>
+                      <span class="sub">Highest rated research methodology</span>
+                    </div>
+                  </div>
+                  <div class="award-item">
+                    <div class="award-medal">&#128172;</div>
+                    <div class="award-info">
+                      <span class="title">Best Oral Presenter</span>
+                      <span class="sub">Exceptional defense &amp; technical articulation</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="conf-action">
+                  <a href="#contact" class="btn btn-outline btn-block">Request Full Paper Preprint</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNSHIP EXPERIENCE TIMELINE -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">Internship Experience</h2>
+          <p class="section-desc">Hands-on industrial experience across robotics hardware, applied artificial intelligence, and machine learning.</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- 1. Robotic Innovation Intern -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge badge-robotics">Robotics &amp; Hardware</span>
+                  <h3 class="timeline-role">Robotic Innovation Intern</h3>
+                  <div class="timeline-company">Thanas Tech &bull; <span>Tirunelveli, India</span></div>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Designed, wired, and assembled custom hardware prototypes, sensor modules, and actuator assemblies for automated robotic systems.</li>
+                <li>Conducted rigorous bench tests on embedded controllers (Arduino, ESP32), sensor calibration routines, and power regulation circuits.</li>
+                <li>Collaborated with senior engineers on mechanical mounting, 3D printed sensor brackets, and hardware troubleshooting.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Hardware Prototyping</span>
+                <span class="tag">Sensor Modules</span>
+                <span class="tag">Actuator Assemblies</span>
+                <span class="tag">Embedded Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. AI Intern -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge badge-ai">Computer Vision</span>
+                  <h3 class="timeline-role">AI Intern</h3>
+                  <div class="timeline-company">Softrate Tech Park &bull; <span>Chennai, India</span></div>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Engineered high-throughput computer vision applications and data processing pipelines for applied enterprise solutions.</li>
+                <li>Implemented image preprocessing, object detection contours, feature extraction, and dataset augmentation techniques.</li>
+                <li>Integrated trained computer vision models into live processing pipelines with optimized inference latencies.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Data Pipelines</span>
+                <span class="tag">Applied AI</span>
+                <span class="tag">OpenCV / Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Python AI Intern -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge badge-ml">Machine Learning</span>
+                  <h3 class="timeline-role">Python AI Intern</h3>
+                  <div class="timeline-company">Infosmite &bull; <span>Tirunelveli, India</span></div>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Focused on the full machine learning lifecycle: data gathering, exploratory analysis, model training, tuning, and deployment.</li>
+                <li>Gained deep practical experience in supervised and unsupervised learning algorithms, evaluation metrics, and model validation.</li>
+                <li>Automated model benchmarking scripts and integrated ML prediction endpoints into test applications.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Model Deployment</span>
+                <span class="tag">ML Lifecycle</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education &amp; Foundation</h2>
+          <p class="section-desc">Strong grounding in Artificial Intelligence, Computer Science, and Engineering mathematics.</p>
+        </div>
+
+        <div class="education-grid">
+          
+          <div class="education-card glass-panel">
+            <div class="edu-year-badge">2023 — 2027</div>
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <h3>B.Tech, Artificial Intelligence &amp; Data Science</h3>
+            <div class="edu-institution">Francis Xavier Engineering College</div>
+            <div class="edu-score">
+              <span class="score-pill">CGPA: 8.05 / 10.00</span>
+            </div>
+            <p class="edu-desc">
+              Specializing in intelligent robotics systems, autonomous perception, machine learning algorithms, database architectures, and distributed systems.
+            </p>
+          </div>
+
+          <div class="education-card glass-panel">
+            <div class="edu-year-badge">2022 — 2023</div>
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3>Higher Secondary Education (Class XII)</h3>
+            <div class="edu-institution">Francis Xavier School &bull; CBSE</div>
+            <div class="edu-score">
+              <span class="score-pill">Percentage: 74.6%</span>
+            </div>
+            <p class="edu-desc">
+              Core focus on Computer Science, Mathematics, Physics, and Chemistry. Established foundational programming concepts in C++ and Python.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something Exceptional</h2>
+          <p class="section-desc">Open for robotics engineering, mobile application development, research collaborations, and internships.</p>
+        </div>
+
+        <div class="contact-hub-grid">
+          <!-- Email Card -->
+          <div class="contact-hub-card glass-panel reveal-item">
+            <div class="contact-hub-top">
+              <div class="contact-hub-icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-hub-info">
+                <span class="contact-hub-tag">Direct Email</span>
+                <h3 class="contact-hub-title"><a href="mailto:kmmajeee@gmail.com" class="contact-link">kmmajeee@gmail.com</a></h3>
+                <p class="contact-hub-sub">Inquiries for robotics roles, mobile app projects &amp; AI research</p>
+              </div>
+            </div>
+            <div class="contact-hub-footer">
+              <a href="mailto:kmmajeee@gmail.com" class="btn btn-primary contact-hub-action">
+                <span>Send Email</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone / WhatsApp Card -->
+          <div class="contact-hub-card glass-panel reveal-item">
+            <div class="contact-hub-top">
+              <div class="contact-hub-icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-hub-info">
+                <span class="contact-hub-tag">Phone &amp; WhatsApp</span>
+                <h3 class="contact-hub-title"><a href="tel:+916381586863" class="contact-link">+91 6381586863</a></h3>
+                <p class="contact-hub-sub">Available for voice calls, consultations &amp; WhatsApp messaging</p>
+              </div>
+            </div>
+            <div class="contact-hub-footer contact-hub-actions-split">
+              <a href="https://wa.me/916381586863" target="_blank" rel="noopener" class="btn btn-primary contact-hub-action">
+                <span>WhatsApp</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </a>
+              <a href="tel:+916381586863" class="btn btn-secondary contact-hub-action">
+                <span>Call Now</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="contact-hub-card glass-panel reveal-item">
+            <div class="contact-hub-top">
+              <div class="contact-hub-icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </div>
+              <div class="contact-hub-info">
+                <span class="contact-hub-tag">Professional Network</span>
+                <h3 class="contact-hub-title"><a href="https://www.linkedin.com/in/majeethkm/" target="_blank" rel="noopener" class="contact-link">LinkedIn Profile</a></h3>
+                <p class="contact-hub-sub">Connect professionally, review background &amp; recommendations</p>
+              </div>
+            </div>
+            <div class="contact-hub-footer">
+              <a href="https://www.linkedin.com/in/majeethkm/" target="_blank" rel="noopener" class="btn btn-secondary contact-hub-action">
+                <span>Connect on LinkedIn</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="contact-hub-card glass-panel reveal-item">
+            <div class="contact-hub-top">
+              <div class="contact-hub-icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </div>
+              <div class="contact-hub-info">
+                <span class="contact-hub-tag">Open Source &amp; Code</span>
+                <h3 class="contact-hub-title"><a href="https://github.com/kmajeee" target="_blank" rel="noopener" class="contact-link">github.com/kmajeee</a></h3>
+                <p class="contact-hub-sub">Inspect published repositories, ROS packages &amp; Flutter code</p>
+              </div>
+            </div>
+            <div class="contact-hub-footer">
+              <a href="https://github.com/kmajeee" target="_blank" rel="noopener" class="btn btn-secondary contact-hub-action">
+                <span>Explore Repositories</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="footer-name">Sheik Abdul Majeeth K M</span>
+        </div>
+        <p class="footer-sub">Robotics Engineer &bull; Mobile App Developer &bull; Published AI Researcher</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/kmajeee" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/majeethkm/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="mailto:kmmajeee@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top-btn" title="Back to top">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog glass-panel">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+      <div class="modal-body" id="modalContent">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
